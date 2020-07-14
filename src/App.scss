@@ -1,0 +1,26 @@
+@import '/styles/fonts.scss';
+@import '/styles/main.scss';
+
+.App {
+    width: 880px;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.shadow-box {
+    width: 100%;
+    padding: 35px 20px 40px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    @media (max-width: 600px) {
+        padding: 20px;
+        margin: 0;
+        box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, .1);
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,189 @@
+.Profile {
+    .intro {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 40px;
+        hr {
+            margin: 20px 0;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+    .button {
+        position: relative;
+        display: inline-block;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: none;
+        border: none;
+        cursor: pointer;
+        vertical-align: top;
+        height: 60px;
+        width: 580px;
+        line-height: 60px;
+        background-color: #0090ff;
+        border-radius: 5px;
+        box-shadow: #000 0px 0px 0px 0px inset;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 500;
+        color: #fff;
+        font-size: 21px;
+        text-align: center;
+        transition: all .15s linear;
+        &:hover {
+            background-color: #837ddb;
+        }
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+    form {
+        padding-left: 60px;
+        padding-right: 18px;
+        padding-bottom: 20px;
+        @media (max-width: 600px) {
+            padding: 0;
+        }
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 38px;
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 23px;
+    }
+    p {
+        margin-bottom: 20px;
+        font-size: 17px;
+        color: #121b21;
+    }
+    .divider {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    .profile-form {
+        margin-bottom: 15px;
+    }
+    textarea.js-input {
+        height: auto;
+        padding: 18px 20px;
+        overflow: hidden;
+    }
+    .input-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .multiline {
+        height: 249px;
+    }
+    .js-input {
+        flex-shrink: 0;
+        height: 60px;
+        width: 580px;
+        margin-right: 18px;
+        background-color: #fff;
+        -webkit-appearance: none;
+        appearance: none;
+        line-height: 1.2;
+        border: 0;
+        outline: 0;
+        padding: 0 20px;
+        resize: none;
+        font-family: inherit;
+        font-size: 18px;
+        border-radius: 5px;
+        box-shadow: #d6d6d6 0px 0px 0px 1px inset;
+        @media (max-width: 600px) {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .invalid {
+        box-shadow: #ff4828 0px 0px 0px 1px inset;
+    }
+    .js-input:not(.invalid) + .error-message {
+        display: none;
+    }
+    .error-message {
+        position: absolute;
+        left: 20px;
+        bottom: -20px;
+        color:  #ff4828;
+    }
+    .vertical-label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .horizontal-label {
+        width: 193px;
+        font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, .6);
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+    .question-wrapper {
+        position: relative;
+    }
+    .question-input {
+        height: 0;
+        margin-top: 0;
+        transition: all .2s;
+        &.expanded {
+            height: 40px;
+            margin-top: 15px;
+        }
+    }
+    .agreement {
+        position: relative;
+        width: 550px;
+        padding-left: 30px;
+        margin: 40px 0 50px;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+        color: #000;
+        @media (max-width: 600px) {
+            width: 100%;
+            padding-left: 0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            display: block;
+            width: 21px;
+            height: 21px;
+            background: url(../../assets/agree-icon.png) no-repeat;
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+    .external-link {
+        color: #0090ff;
+        padding-bottom: 1px;
+        &:hover {
+            color: #837ddb;
+        }
+    }
+    .get-card {
+        padding-left: 30px;
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+}
